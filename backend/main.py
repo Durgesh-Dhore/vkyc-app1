@@ -300,7 +300,7 @@ def get_db():
 
 @app.get("/")
 async def root():
-    return {"message": "VKYC Backend API, CI/CD test"}
+    return {"message": "VKYC Backend API"}
 
 @app.post("/api/customers/create")
 async def create_customer(customer: CustomerCreate, db: Session = Depends(get_db)):
